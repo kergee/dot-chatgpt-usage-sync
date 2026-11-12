@@ -1,0 +1,139 @@
+{
+  "data": {
+    "title": "ChatGPT 用量",
+    "shortLabel": "5 小时",
+    "shortRemaining": "--",
+    "shortUsed": "",
+    "shortReset": "",
+    "weekLabel": "本周",
+    "weekRemaining": "--",
+    "weekUsed": "",
+    "weekReset": "",
+    "updated": "尚未同步",
+    "quote": ""
+  },
+  "windowData": {
+    "default": [
+      {
+        "type": "div",
+        "props": {
+          "tw": "flex flex-col w-full h-full bg-white text-black",
+          "style": {
+            "boxSizing": "border-box"
+          },
+          "children": [
+            {
+              "type": "div",
+              "props": {
+                "tw": "flex flex-row items-center justify-between border-b border-black pb-[4px]",
+                "children": [
+                  {
+                    "type": "div",
+                    "props": {
+                      "tw": "text-18-chillduansans font-bold",
+                      "children": "{{get inputData \"title\" default=\"ChatGPT Plus 用量\"}}"
+                    }
+                  },
+                  {
+                    "type": "div",
+                    "props": {
+                      "tw": "text-12-chillduansans",
+                      "children": "{{get inputData \"updated\" default=\"\"}}"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "div",
+              "props": {
+                "tw": "flex flex-row flex-1 pt-[6px] gap-[10px]",
+                "children": [
+                  {
+                    "type": "div",
+                    "props": {
+                      "tw": "flex flex-col flex-1 border-r border-black pr-[10px]",
+                      "children": [
+                        {
+                          "type": "div",
+                          "props": {
+                            "tw": "text-14-chillduansans",
+                            "children": "{{get inputData \"shortLabel\" default=\"5 小时\"}} · 剩余"
+                          }
+                        },
+                        {
+                          "type": "div",
+                          "props": {
+                            "tw": "text-32-chillduansans font-bold",
+                            "style": {
+                              "lineHeight": "38px"
+                            },
+                            "children": "{{get inputData \"shortRemaining\" default=\"-\"}}"
+                          }
+                        },
+                        {
+                          "type": "div",
+                          "props": {
+                            "tw": "text-12-chillduansans",
+                            "children": "{{get inputData \"shortUsed\" default=\"\"}} · {{get inputData \"shortReset\" default=\"\"}}"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "div",
+                    "props": {
+                      "tw": "flex flex-col flex-1",
+                      "children": [
+                        {
+                          "type": "div",
+                          "props": {
+                            "tw": "text-12-chillduansans",
+                            "children": "{{get inputData \"weekLabel\" default=\"本周\"}}"
+                          }
+                        },
+                        {
+                          "type": "div",
+                          "props": {
+                            "tw": "flex flex-1 items-center justify-center text-center text-18-chillduansans font-bold",
+                            "style": {
+                              "lineHeight": "24px",
+                              "whiteSpace": "pre-line",
+                              "letterSpacing": "1px",
+                              "lineClamp": 2,
+                              "overflow": "hidden"
+                            },
+                            "children": "{{get inputData \"weekRemaining\" default=\"-\"}}"
+                          }
+                        },
+                        {
+                          "type": "div",
+                          "props": {
+                            "tw": "text-12-chillduansans",
+                            "children": "{{get inputData \"weekUsed\" default=\"\"}} · {{get inputData \"weekReset\" default=\"\"}}"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "layoutFull": {
+    "tw": "bg-white p-[10px]",
+    "style": {
+      "padding": 10,
+      "backgroundColor": "#FFFFFF"
+    }
+  },
+  "border": 0,
+  "refreshNow": true,
+  "taskKey": "",
+  "taskAlias": "ChatGPT Plus 用量"
+}
